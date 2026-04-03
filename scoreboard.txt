@@ -1,3 +1,5 @@
+titli 75 7
+titli 67 6
 Nivi 27 4
 Nivi 27 4
 Vedika 21 3
@@ -6,5 +8,3 @@ Muskan 19 3
 Nivi 17 3
 Khushi 16 3
 Ruchi 16 3
-Nivi 16 3
-khushi 15 3

@@ -5,8 +5,8 @@
 #include <string.h>
 #include <stdio.h>
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+int SCREEN_WIDTH = 800;
+int SCREEN_HEIGHT = 600;
 #define MAX_BULLETS 20
 #define MAX_TARGETS 20
 #define MAX_NAME_LEN 20
@@ -127,7 +127,10 @@ void DrawRankStar(int x, int y, int rank) {
 }
 
 int main(void) {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Deeksha and Khushi Shooting Game");
+    InitWindow(0, 0, "Deeksha and Khushi Shooting Game");
+    ToggleFullscreen();
+    SCREEN_WIDTH = GetScreenWidth();
+    SCREEN_HEIGHT = GetScreenHeight();
     SetTargetFPS(60);
     srand(time(0));
 
